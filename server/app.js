@@ -20,10 +20,7 @@ function init() {
 
   app.use(cors());
   app.use(bodyParser.json());
-
-  app.get("/", (req, res) => {
-    res.send("Hello supabase");
-  });
+  app.use(express.static("../client/dist"));
 
   app.use("/owners", ownersRouter);
   app.use("/authentication", authenticationRouter);
