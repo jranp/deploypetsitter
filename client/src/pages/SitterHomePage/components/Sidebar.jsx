@@ -18,6 +18,7 @@ import {
   iconPaymentStyle,
 } from "./SidebarStyle";
 import { useNavigate } from "react-router-dom";
+import logositter from "../../../PublicPicture/logositter.png";
 
 const Sidebar = ({ activeTaps, setActiveTaps, setIsProfilePage }) => {
   const { logout } = useAuth();
@@ -42,7 +43,7 @@ const Sidebar = ({ activeTaps, setActiveTaps, setIsProfilePage }) => {
     <div className="container_sidebar" css={containerSidebarStyle}>
       <div className="section__logo" css={sectionLogoStyle}>
         <img
-          src="/src/PublicPicture/logositter.png"
+          src={logositter}
           alt="Logo"
           width="140"
           onClick={() => {
