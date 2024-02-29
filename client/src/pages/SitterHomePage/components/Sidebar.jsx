@@ -2,6 +2,7 @@
 import { css } from "@emotion/react";
 import { RxPerson } from "react-icons/rx";
 import React, { useState, useEffect } from "react";
+import logositter from "../../../PublicPicture/logositter.png";
 import { useAuth } from "../../../contexts/authentication";
 import { GoCreditCard } from "react-icons/go";
 import { IoList } from "react-icons/io5";
@@ -42,7 +43,7 @@ const Sidebar = ({ activeTaps, setActiveTaps, setIsProfilePage }) => {
     <div className="container_sidebar" css={containerSidebarStyle}>
       <div className="section__logo" css={sectionLogoStyle}>
         <img
-          src="/src/PublicPicture/logositter.png"
+          src={logositter}
           alt="Logo"
           width="140"
           onClick={() => {
